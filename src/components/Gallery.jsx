@@ -1,5 +1,6 @@
 import React, {useEffect}from 'react'
 import Carousel from 'better-react-carousel'; // if not already imported globally
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Gallery.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -7,12 +8,11 @@ import { useNavigate } from 'react-router-dom';
 const Gallery = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem('name');
-    if (!isLoggedIn) {
-      navigate('/login');
-    }
-  }, [navigate]);
+ useEffect(() => {
+  if (!localStorage.getItem('name')) {
+    navigate('/login');
+  }
+}, [navigate]);
 
   return (
     <>
