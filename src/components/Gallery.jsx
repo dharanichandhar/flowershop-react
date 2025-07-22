@@ -1,5 +1,5 @@
 import React, {useEffect}from 'react'
-//import Carousel from 'better-react-carousel'; // if not already imported globally
+import Carousel from 'better-react-carousel'; // if not already imported globally
 import './Gallery.css'
 import { useNavigate } from 'react-router-dom';
 
