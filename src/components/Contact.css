@@ -1,0 +1,67 @@
+
+/* Contact.css */
+
+.contact-section {
+   background-image: url('https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Overlay for contrast */
+.contact-overlay {
+ background-color: rgba(225, 225, 225,0.5);
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  color: #ff69b4 ;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+ 
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-button {
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e0559d;
+}

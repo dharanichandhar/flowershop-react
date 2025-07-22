@@ -1,0 +1,62 @@
+/* Navbar.css */
+
+.custom-navbar {
+  background: linear-gradient(90deg, #b572f3 0%, #ee88b4 100%); /* purple left to pink right */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 0;
+  margin: 0;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.custom-container {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.flower-text {
+  color: black; /* Pink */
+}
+
+.shop-text {
+  color: rgb(236, 54, 84); /* black*/
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffe6f0 !important;
+}
+
+.btn-outline-success {
+  border-color: white;
+  color: white;
+  border-radius: 50px;
+  padding: 6px 18px;
+}
+
+.btn-outline-success:hover {
+  background-color: white;
+  color: #a26ad6;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 30px;
+  padding: 6px 16px;
+}
