@@ -1,63 +1,20 @@
-/* Gallery.css */
-
-/* Container */
-.gallery_container {
-  padding: 60px;
-  min-height: 88vh;
-  background-color: #f5d8f1;
-  animation: fadeSlideUpContainer 1s ease-out;
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Animate each card */
-.gallery_container .carousel__inner-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: rgb(245, 223, 226);
-  animation: fadeSlideUpCard 1s ease forwards;
-  opacity: 0;
-}
-
-/* Image styles */
-.gallery_container img {
-  width: 100%;         /* Fill the carousel cell */
+.gallery-item img {
+  width: 100%;
   height: 300px;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-
-/* Hover effect */
-.gallery_container img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* === Animations === */
-
-/* Container fade-slide */
-@keyframes fadeSlideUpContainer {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Cards fade-slide */
-@keyframes fadeSlideUpCard {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.gallery-item img:hover {
+  transform: scale(1.05);
 }
