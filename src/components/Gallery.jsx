@@ -1,6 +1,6 @@
 import React, {useEffect}from 'react'
 import Carousel from 'better-react-carousel'; // if not already imported globally
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+//import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Gallery.css'
 import { useNavigate } from 'react-router-dom';
 
